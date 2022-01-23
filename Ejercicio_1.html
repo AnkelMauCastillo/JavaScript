@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        //var ambito global
+        var hola = "Hola Mundo";
+        //let ambito de bloque
+        let hello = "Hello";
+        console.log(hola);  
+        console.log(hello);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hello);
+        //ambito bloque
+        var musica = "Rock";
+        console.log("Variable Musica antes del bloque", musica);
+        //esto es un bloque
+        /*
+        Esto es un comentario de varias lineas
+        */
+        {
+            var musica = "Pop";
+            console.log("Variable Musica dentro del bloque", musica);
+        }
+        var musica = "Pop";
+        console.log("Variable Musica dentro del bloque", musica);
+
+        //let
+        console.log("*********************");
+        let musica2 = "Downtempo";
+        console.log("Let Musica antes del bloque", musica2);
+        {
+            let musica2 = "Psytrance";
+            console.log("Let Musica dentro del bloque", musica2);
+        }
+        console.log("Let Musica despues del bloque", musica2);
+
+        // 
+        var colores = ["verde", "blanco", "azul"];
+        colores.forEach(function (colores, index) {
+            console.log(colores);
+            
+        })
+
+        
+     
+    </script>
+</body>
+</html>
