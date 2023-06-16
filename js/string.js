@@ -38,3 +38,28 @@ console.log(parseFloat(d) + a);
 console.log(parseInt(d) + a);
 
 //boolean values
+let verdadero = true;
+let falso = false;
+let v = Boolean(true);
+let f = Boolean (false);
+console.log(verdadero, falso);
+console.log(v^f);
+console.log(v^v);
+
+/*
+null, undefined, NaN
+*/
+/**
+ * undefined indica que no se ha inicializado
+ * una variable y que el valor está ausente
+ */
+let indefinida;
+console.log(indefinida);
+
+/**
+ * null es un valor especial que indica
+ * ausencia de un valor
+ */
+
+let nulo = null;
+console.log(nulo);
