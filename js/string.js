@@ -63,3 +63,7 @@ console.log(indefinida);
 
 let nulo = null;
 console.log(nulo);
+
+//NaN - Not a Number
+let noEsNumero = "hola" * 3.7;
+console.log(noEsNumero);
